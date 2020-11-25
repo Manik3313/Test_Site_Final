@@ -1,7 +1,7 @@
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import java.io.IOException;
-import java.net.URL;
 import java.util.Map;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,53 +12,41 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import io.testproject.sdk.DriverBuilder;
+import io.testproject.sdk.drivers.TestProjectCapabilityType;
 import io.testproject.sdk.drivers.web.ChromeDriver;
 import io.testproject.sdk.internal.exceptions.AgentConnectException;
 import io.testproject.sdk.internal.exceptions.InvalidTokenException;
 import io.testproject.sdk.internal.exceptions.ObsoleteVersionException;
 
-public class Test_site extends Test_Base 
-{
+public class Test_Practice2 {
 
+
+	boolean flag=false;
 	ChromeDriver driver ;
-	//ChromeDriver driver1;
-	//=new ChromeDriver();
-
-	Boolean flag=false;
+	public static final String USERNAME = "manikgupta5";
+	public static final String AUTOMATE_KEY = "Bwqkktpz6zVucA9btguN";
+	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+	ChromeOptions  caps= new ChromeOptions();
+	//ChromeDriver driver = new ChromeDriver(chromeOptions);
 	@BeforeTest
-	public void set_up() throws InvalidTokenException, AgentConnectException, IOException, ObsoleteVersionException 
+	public void setup() throws InvalidTokenException, AgentConnectException, IOException, ObsoleteVersionException
 	{
-		driver= new DriverBuilder<ChromeDriver>(new ChromeOptions())
-				  .withProjectName("Test_site_Project")
-				  .withRemoteAddress(new URL("http://localhost:8585"))
-				  .withToken("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1")
-				  .build(ChromeDriver.class);
-		 driver.report().disableTestAutoReports(true);
-		  
-		//Url :"http://localhost:8585"
-			
-		  
-		// driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-//		WebDr
-		// WebDriverManager.chromedriver().setup();
-
-		// driver=new ChromeDriver();// You ahve to specify token here
-		  
-		driver.get("https://the-internet.herokuapp.com/");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-		System.out.println(driver.getCurrentUrl());
-		extent.attachReporter(htmlreporter);
-		
+	caps.setCapability("os", "Windows");
+	caps.setCapability("os_version", "10");
+	caps.setCapability("browser", "Chrome");
+	caps.setCapability("browser_version", "80");
+	caps.setCapability("name", "manikgupta5's First Test");
+	caps.setCapability(
+	        TestProjectCapabilityType.CLOUD_URL,URL);
+	driver = new ChromeDriver("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
+	driver.get("https://github.com/Manik3313/Test_Site_Final/blob/main/Framework_Practice/pom.xml");
 	}
-
 	@BeforeMethod
-	public void setup()
+	public void setup2()
 	{
 		driver.get("https://the-internet.herokuapp.com/");
 	}
+	@Test
 	@DataProvider(name = "testdata" )
 	public Object[][] test_data() throws IOException {
 		excel_utls excel = new excel_utls("C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx",
@@ -68,6 +56,7 @@ public class Test_site extends Test_Base
 		return data;
 	}
 
+	@Test
 	@DataProvider(name = "testdata2" )
 	public Object[][] test_data2() throws IOException {
 		excel_utls excel = new excel_utls("C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx",
@@ -77,6 +66,7 @@ public class Test_site extends Test_Base
 		
 	}
 
+	@Test
 	@DataProvider(name = "testdata3" )
 	public Object[][] test_data3() throws IOException {
 		excel_utls excel = new excel_utls("C:\\Users\\manik.gupta\\Documents\\test\\user_data1.xlsx",
@@ -96,13 +86,14 @@ public class Test_site extends Test_Base
 		if(lastname.equalsIgnoreCase(data.get("firstname")))
 		{
 			driver.report().test("Data found", true).submit();
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 		else
 		{
 			driver.report().test("Data not found", false).submit();
 			driver.report().step("Fail", false, true);
-			Assert.assertTrue(false);
+			//driver.report().step("Fail", false, true);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 	
@@ -126,7 +117,7 @@ public class Test_site extends Test_Base
 			driver.report().step("Fail", false, true);
 			
 		//driver.get("https://the-internet.herokuapp.com/");	
-		Assert.assertTrue(flag);
+		AssertJUnit.assertTrue(flag);
 	}
 	
 	@Test(/*testName = "Multi_Window_Test"*/)
@@ -137,13 +128,13 @@ public class Test_site extends Test_Base
 		if (driver.getWindowHandles().size()>1) 
 		{
 			driver.report().test("Operation Successful", true).submit();;
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 			else
 			{
 				driver.report().test("Operation unsuccessful", false).submit();;
 				driver.report().step("Fail", false, true);
-				Assert.assertTrue(false);
+				AssertJUnit.assertTrue(false);
 			}
 			
 	}
@@ -160,15 +151,15 @@ public class Test_site extends Test_Base
 		if(driver.findElement(By.xpath("//*[@id='checkbox']")).isDisplayed())
 		{
 			driver.report().test("Dynamic control work", true).submit();;
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 		else
 		{
 
-			driver.report().test("Dynamic control donot work", false).submit();;
+			//driver.report().test("Dynamic control donot work", false).submit();;
 			driver.report().step("Fail", false, true);
 			
-			Assert.assertTrue(false);
+			AssertJUnit.assertTrue(false);
 		}
 	}
 	@Test(/*testName = "Forgot_Password",*/dataProvider = "testdata3")
@@ -182,25 +173,25 @@ public class Test_site extends Test_Base
 		{
 			driver.report().test("forgot passsword work", true).submit();;
 			
-			Assert.assertTrue(true);
+			AssertJUnit.assertTrue(true);
 		}
 			
 		else
 		{
 
-			driver.report().test("forgot password donopt work", false).submit();
+			//driver.report().test("forgot password donopt work", false).submit();
 			driver.report().step("Fail", false, true);
 			
-			Assert.assertTrue(false);	
+			AssertJUnit.assertTrue(false);	
 		}
 			
 	}
 	@AfterTest
 	public void teardown() {
-		extent.flush();
 		driver.close();
 		driver.quit();
 	}
 }
+
 
 

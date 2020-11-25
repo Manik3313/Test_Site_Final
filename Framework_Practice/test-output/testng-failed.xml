@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Test_site">
+      <class name="Test_Practice2">
         <methods>
-          <include name="test_5"/>
-          <include name="teardown"/>
           <include name="setup"/>
-          <include name="set_up"/>
-          <include name="test_4"/>
-          <include name="test_1"/>
-          <include name="test_3"/>
-          <include name="test_2"/>
+          <include name="test_2" invocation-numbers="1 2"/>
+          <include name="teardown"/>
+          <include name="setup2"/>
         </methods>
-      </class> <!-- Test_site -->
+      </class> <!-- Test_Practice2 -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
