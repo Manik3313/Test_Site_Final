@@ -1,96 +1,382 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="4" failed="7" skipped="0">
+<testng-results ignored="0" total="11" passed="0" failed="0" skipped="11">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-25T06:28:45Z" name="Default suite" finished-at="2020-11-25T06:30:13Z" duration-ms="88569">
+  <suite started-at="2020-11-25T10:13:15Z" name="Default suite" finished-at="2020-11-25T10:13:19Z" duration-ms="3784">
     <groups>
     </groups>
-    <test started-at="2020-11-25T06:28:45Z" name="Default test" finished-at="2020-11-25T06:30:13Z" duration-ms="88569">
+    <test started-at="2020-11-25T10:13:15Z" name="Default test" finished-at="2020-11-25T10:13:19Z" duration-ms="3784">
       <class name="Test_site">
-        <test-method is-config="true" signature="set_up()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:28:45Z" name="set_up" finished-at="2020-11-25T06:29:41Z" duration-ms="56187" status="PASS">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:15Z" name="set_up" finished-at="2020-11-25T10:13:18Z" duration-ms="2873" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:42Z" name="setup" finished-at="2020-11-25T06:29:44Z" duration-ms="1830" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:44Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T06:29:47Z" duration-ms="3229" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstname=John, lastname=Smith}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:47Z" name="setup" finished-at="2020-11-25T06:29:48Z" duration-ms="481" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:48Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T06:29:49Z" duration-ms="1060" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstname=Jason, lastname=Doe}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:49Z" name="setup" finished-at="2020-11-25T06:29:50Z" duration-ms="994" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:50Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T06:29:51Z" duration-ms="1068" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{firstname=Tim, lastname=Conway}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:51Z" name="setup" finished-at="2020-11-25T06:29:51Z" duration-ms="491" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:51Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T06:29:57Z" duration-ms="5753" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=SuperSecretPassword!, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_2(Test_site.java:131)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -104,47 +390,79 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:57Z" name="setup" finished-at="2020-11-25T06:29:58Z" duration-ms="544" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:29:58Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T06:30:00Z" duration-ms="1962" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=SuperSecretPasswor, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_2(Test_site.java:131)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -158,47 +476,79 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:00Z" name="setup" finished-at="2020-11-25T06:30:01Z" duration-ms="1407" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:01Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T06:30:02Z" duration-ms="1169" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{password=SuperSecretPassword, username=tomsmith}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_2(Test_site.java:131)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -212,40 +562,79 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:02Z" name="setup" finished-at="2020-11-25T06:30:03Z" duration-ms="701" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_3()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:03Z" name="test_3" finished-at="2020-11-25T06:30:04Z" duration-ms="699" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_3()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_3" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_3(Test_site.java:147)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -259,55 +648,165 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_3 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:04Z" name="setup" finished-at="2020-11-25T06:30:04Z" duration-ms="520" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_4()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:04Z" name="test_4" finished-at="2020-11-25T06:30:06Z" duration-ms="1405" status="PASS">
+        <test-method signature="test_4()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_4" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_4 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:06Z" name="setup" finished-at="2020-11-25T06:30:06Z" duration-ms="516" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="setup" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:06Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T06:30:07Z" duration-ms="906" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{email=manik33@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_5(Test_site.java:192)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -321,47 +820,79 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:07Z" name="setup" finished-at="2020-11-25T06:30:08Z" duration-ms="524" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="setup" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:08Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T06:30:10Z" duration-ms="2444" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{email=xyz@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_5(Test_site.java:192)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -375,47 +906,79 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:10Z" name="setup" finished-at="2020-11-25T06:30:12Z" duration-ms="1864" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="setup" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:12Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T06:30:13Z" duration-ms="877" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{email=abc123@gmail.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertTrue(Assert.java:44)
-at org.testng.Assert.assertTrue(Assert.java:54)
-at Test_site.test_5(Test_site.java:192)
+              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
+Driver info: driver.version: unknown
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
+at Test_site.set_up(Test_site.java:41)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+at org.testng.TestRunner.beforeRun(TestRunner.java:529)
+at org.testng.TestRunner.run(TestRunner.java:497)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
 at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
 at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
@@ -429,13 +992,50 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.reflect.InvocationTargetException
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
+... 25 more
+Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
+at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
+... 30 more
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
+at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
+at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
+at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
+at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
+at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
+at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
+at java.base/java.net.Socket.connect(Socket.java:608)
+at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+... 43 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T06:30:13Z" name="teardown" finished-at="2020-11-25T06:30:13Z" duration-ms="318" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="teardown" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

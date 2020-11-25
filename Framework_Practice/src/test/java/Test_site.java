@@ -17,11 +17,6 @@ import io.testproject.sdk.drivers.web.ChromeDriver;
 import io.testproject.sdk.internal.exceptions.AgentConnectException;
 import io.testproject.sdk.internal.exceptions.InvalidTokenException;
 import io.testproject.sdk.internal.exceptions.ObsoleteVersionException;
-import io.testproject.sdk.drivers.ReportingDriver;
-//import io.testproject.sdk.interfaces.junit5.ExceptionsReporter;
-import io.testproject.sdk.internal.exceptions.AgentConnectException;
-import io.testproject.sdk.internal.exceptions.InvalidTokenException;
-import io.testproject.sdk.internal.exceptions.ObsoleteVersionException;
 
 public class Test_site extends Test_Base 
 {
@@ -37,7 +32,7 @@ public class Test_site extends Test_Base
 		driver= new DriverBuilder<ChromeDriver>(new ChromeOptions())
 				  .withProjectName("Test_site_Project")
 				  .withRemoteAddress(new URL("http://localhost:8585"))
-				  .withToken("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1")
+				  .withToken("j-cMljjJIjQ6zoXzyYIjhpz0PDyseiIyRXYKsqYzu_41")//"SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1")
 				  .build(ChromeDriver.class);
 		 driver.report().disableTestAutoReports(true);
 		  
