@@ -2,26 +2,44 @@
 <testng-results ignored="0" total="11" passed="0" failed="0" skipped="11">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-25T10:13:15Z" name="Default suite" finished-at="2020-11-25T10:13:19Z" duration-ms="3784">
+  <suite started-at="2020-11-25T10:37:07Z" name="Default suite" finished-at="2020-11-25T10:37:41Z" duration-ms="34188">
     <groups>
     </groups>
-    <test started-at="2020-11-25T10:13:15Z" name="Default test" finished-at="2020-11-25T10:13:19Z" duration-ms="3784">
+    <test started-at="2020-11-25T10:37:07Z" name="Default test" finished-at="2020-11-25T10:37:41Z" duration-ms="34188">
       <class name="Test_site">
-        <test-method is-config="true" signature="set_up()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:15Z" name="set_up" finished-at="2020-11-25T10:13:18Z" duration-ms="2873" status="FAIL">
+        <test-method is-config="true" signature="set_up()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:07Z" name="set_up" finished-at="2020-11-25T10:37:37Z" duration-ms="29840" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -46,68 +64,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- set_up -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -132,68 +131,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -218,68 +198,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -304,68 +265,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -390,68 +332,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -476,68 +399,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -562,68 +466,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_3()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_3" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_3()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_3" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -648,68 +533,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_3 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="setup" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_4()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:18Z" name="test_4" finished-at="2020-11-25T10:13:18Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_4()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_4" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -734,68 +600,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_4 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="setup" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -820,68 +667,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="setup" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -906,68 +734,49 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="setup" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="setup" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
-              <![CDATA[Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown]]>
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Failed to create an instance of io.testproject.sdk.drivers.web.ChromeDriver
+              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=87.0.4280.66)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DSCHD-PC-CB-77', ip: '192.168.6.76', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.9'
-Driver info: driver.version: unknown
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:194)
-at Test_site.set_up(Test_site.java:41)
+Driver info: io.testproject.sdk.drivers.web.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:58674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 99fa11eb-cde8-4937-be4a-8bd..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 42b76d69f7fe5869cb288bdb0c9...}
+Session ID: 42b76d69f7fe5869cb288bdb0c9a5774
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
+at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+at Test_site.set_up(Test_site.java:50)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -992,50 +801,13 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at io.testproject.sdk.DriverBuilder.build(DriverBuilder.java:186)
-... 25 more
-Caused by: io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://192.168.6.144:8585
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
-at io.testproject.sdk.internal.rest.AgentClient.<init>(AgentClient.java:229)
-at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
-at io.testproject.sdk.drivers.web.ChromeDriver.<init>(ChromeDriver.java:367)
-... 30 more
-Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.6.144:8585 [/192.168.6.144] failed: Connection refused: connect
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
-at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
-at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:394)
-at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
-at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
-at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
-at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
-at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
-at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
-at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
-... 33 more
-Caused by: java.net.ConnectException: Connection refused: connect
-at java.base/java.net.PlainSocketImpl.waitForConnect(Native Method)
-at java.base/java.net.PlainSocketImpl.socketConnect(PlainSocketImpl.java:107)
-at java.base/java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:399)
-at java.base/java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:242)
-at java.base/java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:224)
-at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:403)
-at java.base/java.net.Socket.connect(Socket.java:608)
-at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
-at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
-... 43 more
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:13:19Z" name="teardown" finished-at="2020-11-25T10:13:19Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_site@1fb669c3]" started-at="2020-11-25T10:37:41Z" name="teardown" finished-at="2020-11-25T10:37:41Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

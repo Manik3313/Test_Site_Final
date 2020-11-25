@@ -5,12 +5,14 @@
     <classes>
       <class name="Test_site">
         <methods>
-          <include name="test_5" invocation-numbers="0 1 2"/>
+          <include name="test_5"/>
           <include name="teardown"/>
           <include name="setup"/>
           <include name="set_up"/>
+          <include name="test_4"/>
+          <include name="test_1"/>
           <include name="test_3"/>
-          <include name="test_2" invocation-numbers="0 1 2"/>
+          <include name="test_2"/>
         </methods>
       </class> <!-- Test_site -->
     </classes>

@@ -32,7 +32,7 @@ public class Test_site extends Test_Base
 		driver= new DriverBuilder<ChromeDriver>(new ChromeOptions())
 				  .withProjectName("Test_site_Project")
 				  .withRemoteAddress(new URL("http://localhost:8585"))
-				  .withToken("j-cMljjJIjQ6zoXzyYIjhpz0PDyseiIyRXYKsqYzu_41")//"SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1")
+				  .withToken("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1")
 				  .build(ChromeDriver.class);
 		 driver.report().disableTestAutoReports(true);
 		  
