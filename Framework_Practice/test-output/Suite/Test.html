@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/0/11</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Nov 25 12:32:47 IST 2020</td>
+<td>Started on:</td><td>Thu Nov 26 14:50:21 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>44 seconds (44691 ms)</td>
+<tr><td>Total time:</td><td>121 seconds (121949 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,46 +75,48 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_site.set_up()'><b>set_up</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace744021169", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace744021169'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.setup()'><b>setup</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1432403167", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1432403167'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -139,9 +141,33 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
-<td>43</td>
-<td>Test_site@49c66ade</td></tr>
+<td>120</td>
+<td>Test_Practice2@68d279ec</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -151,65 +177,65 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.setup()'><b>setup</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.setup2()'><b>setup2</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.teardown()'><b>teardown</b><br>Test class: Test_site</td>
+<td title='Test_Practice2.teardown()'><b>teardown</b><br>Test class: Test_Practice2</td>
 <td></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -219,46 +245,48 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Test_site.test_1()'><b>test_1</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace878205641", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace878205641'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_1()'><b>test_1</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace285058000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace285058000'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -283,50 +311,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_1()'><b>test_1</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace368270275", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace368270275'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_1()'><b>test_1</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1332439166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1332439166'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -351,50 +405,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_1()'><b>test_1</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1619730386", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1619730386'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_1()'><b>test_1</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1431699407", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1431699407'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -419,50 +499,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_2()'><b>test_2</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1907767760", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1907767760'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_2()'><b>test_2</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1013528106", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1013528106'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -487,50 +593,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_2()'><b>test_2</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1566285515", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1566285515'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_2()'><b>test_2</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace72615125", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace72615125'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -555,50 +687,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_2()'><b>test_2</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1583001542", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1583001542'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_2()'><b>test_2</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1555965524", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1555965524'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -623,50 +781,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_3()'><b>test_3</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1434651019", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1434651019'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_3()'><b>test_3</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1231696346", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1231696346'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -691,50 +875,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_4()'><b>test_4</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1403539444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1403539444'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_4()'><b>test_4</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1367612102", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1367612102'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -759,50 +969,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_5()'><b>test_5</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace991806841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace991806841'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_5()'><b>test_5</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1152487396", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1152487396'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -827,50 +1063,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_5()'><b>test_5</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625097607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1625097607'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_5()'><b>test_5</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1295820487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1295820487'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -895,50 +1157,76 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 <tr>
-<td title='Test_site.test_5()'><b>test_5</b><br>Test class: Test_site</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace572137576", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace572137576'><pre>org.openqa.selenium.WebDriverException: unknown error: failed to change window state to &apos;normal&apos;, current state is &apos;maximized&apos;
-  (Session info: chrome=87.0.4280.66)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DSCHD-PC-CB-77&apos;, ip: &apos;192.168.6.76&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.9&apos;
-Driver info: io.testproject.sdk.drivers.web.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: C:\Users\MANIK~1.GUP\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:60330}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: {autodetect: false, proxyType: UNSPECIFIED}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0.0, pageLoad: 300000.0, script: 30000.0}, tp:guid: 11a0f60f-5afe-4df9-b2ae-bc3..., unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 3933154891edb8a16953dbcf8f5...}
-Session ID: 3933154891edb8a16953dbcf8f5441de
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:112)
-	at io.testproject.sdk.internal.helpers.CustomHttpCommandExecutor.execute(CustomHttpCommandExecutor.java:96)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
-	at Test_site.set_up(Test_site.java:55)
+<td title='Test_Practice2.test_5()'><b>test_5</b><br>Test class: Test_Practice2</td>
+<td><div><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1784908921", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1784908921'><pre>io.testproject.sdk.internal.exceptions.AgentConnectException: Failed communicating with the Agent at http://localhost:8585
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:468)
+	at io.testproject.sdk.internal.rest.AgentClient.&lt;init&gt;(AgentClient.java:229)
+	at io.testproject.sdk.internal.rest.AgentClient.getClient(AgentClient.java:401)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:367)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:340)
+	at io.testproject.sdk.drivers.web.ChromeDriver.&lt;init&gt;(ChromeDriver.java:200)
+	at Test_Practice2.setup(Test_Practice2.java:41)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -963,9 +1251,33 @@ Session ID: 3933154891edb8a16953dbcf8f5441de
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.SocketTimeoutException: Read timed out
+	at java.base/java.net.SocketInputStream.socketRead0(Native Method)
+	at java.base/java.net.SocketInputStream.socketRead(SocketInputStream.java:115)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:168)
+	at java.base/java.net.SocketInputStream.read(SocketInputStream.java:140)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:137)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:153)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:282)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:138)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:163)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:165)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:272)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.testproject.sdk.internal.rest.AgentClient.startSession(AgentClient.java:466)
+	... 30 more
 </pre></div></td>
 <td>0</td>
-<td>Test_site@49c66ade</td></tr>
+<td>Test_Practice2@68d279ec</td></tr>
 </table><p>
 </body>
 </html>
