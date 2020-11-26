@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-11-25T13:49:53Z" name="Suite" finished-at="2020-11-25T13:51:32Z" duration-ms="99796">
+  <suite started-at="2020-11-26T10:12:29Z" name="Default suite" finished-at="2020-11-26T10:14:09Z" duration-ms="99720">
     <groups>
     </groups>
-    <test started-at="2020-11-25T13:49:53Z" name="Test" finished-at="2020-11-25T13:51:32Z" duration-ms="99796">
+    <test started-at="2020-11-26T10:12:29Z" name="Default test" finished-at="2020-11-26T10:14:09Z" duration-ms="99720">
       <class name="Test_Practice2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:49:53Z" name="setup" finished-at="2020-11-25T13:50:20Z" duration-ms="26948" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:12:29Z" name="setup" finished-at="2020-11-26T10:12:57Z" duration-ms="27789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:21Z" name="setup2" finished-at="2020-11-25T13:50:24Z" duration-ms="2931" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:12:58Z" name="setup2" finished-at="2020-11-26T10:13:01Z" duration-ms="3058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:24Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T13:50:25Z" duration-ms="1089" status="PASS">
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:01Z" name="test_1" data-provider="testdata2" finished-at="2020-11-26T10:13:02Z" duration-ms="1159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:25Z" name="setup2" finished-at="2020-11-25T13:50:25Z" duration-ms="506" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:02Z" name="setup2" finished-at="2020-11-26T10:13:02Z" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:25Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T13:50:26Z" duration-ms="893" status="PASS">
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:02Z" name="test_1" data-provider="testdata2" finished-at="2020-11-26T10:13:03Z" duration-ms="916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,11 +41,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:26Z" name="setup2" finished-at="2020-11-25T13:50:27Z" duration-ms="494" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:03Z" name="setup2" finished-at="2020-11-26T10:13:04Z" duration-ms="486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:27Z" name="test_1" data-provider="testdata2" finished-at="2020-11-25T13:50:27Z" duration-ms="852" status="PASS">
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:04Z" name="test_1" data-provider="testdata2" finished-at="2020-11-26T10:13:05Z" duration-ms="864" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -56,11 +56,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:27Z" name="setup2" finished-at="2020-11-25T13:50:28Z" duration-ms="465" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:05Z" name="setup2" finished-at="2020-11-26T10:13:05Z" duration-ms="482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:28Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T13:50:31Z" duration-ms="2780" status="PASS">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:05Z" name="test_2" data-provider="testdata" finished-at="2020-11-26T10:13:08Z" duration-ms="2859" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,11 +71,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:31Z" name="setup2" finished-at="2020-11-25T13:50:31Z" duration-ms="462" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:08Z" name="setup2" finished-at="2020-11-26T10:13:08Z" duration-ms="485" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:31Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T13:50:34Z" duration-ms="2932" status="FAIL">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:08Z" name="test_2" data-provider="testdata" finished-at="2020-11-26T10:13:11Z" duration-ms="2852" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
 at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
 at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
 at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-at Test_Practice2.test_2(Test_Practice2.java:120)
+at Test_Practice2.test_2(Test_Practice2.java:124)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -121,11 +121,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:34Z" name="setup2" finished-at="2020-11-25T13:50:35Z" duration-ms="448" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:11Z" name="setup2" finished-at="2020-11-26T10:13:12Z" duration-ms="484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:35Z" name="test_2" data-provider="testdata" finished-at="2020-11-25T13:50:37Z" duration-ms="2854" status="FAIL">
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:12Z" name="test_2" data-provider="testdata" finished-at="2020-11-26T10:13:15Z" duration-ms="3105" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -139,7 +139,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
 at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
 at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
-at Test_Practice2.test_2(Test_Practice2.java:120)
+at Test_Practice2.test_2(Test_Practice2.java:124)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -171,27 +171,27 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:37Z" name="setup2" finished-at="2020-11-25T13:50:38Z" duration-ms="482" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:15Z" name="setup2" finished-at="2020-11-26T10:13:16Z" duration-ms="561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_3()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:38Z" name="test_3" finished-at="2020-11-25T13:50:39Z" duration-ms="1283" status="PASS">
+        <test-method signature="test_3()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:16Z" name="test_3" finished-at="2020-11-26T10:13:17Z" duration-ms="1424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_3 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:39Z" name="setup2" finished-at="2020-11-25T13:50:40Z" duration-ms="436" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:17Z" name="setup2" finished-at="2020-11-26T10:13:17Z" duration-ms="494" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_4()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:40Z" name="test_4" finished-at="2020-11-25T13:50:51Z" duration-ms="11091" status="PASS">
+        <test-method signature="test_4()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:17Z" name="test_4" finished-at="2020-11-26T10:13:29Z" duration-ms="11189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_4 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:51Z" name="setup2" finished-at="2020-11-25T13:50:51Z" duration-ms="454" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:29Z" name="setup2" finished-at="2020-11-26T10:13:29Z" duration-ms="510" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:50:51Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T13:51:03Z" duration-ms="12238" status="PASS">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:29Z" name="test_5" data-provider="testdata3" finished-at="2020-11-26T10:13:42Z" duration-ms="12493" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -202,11 +202,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:51:03Z" name="setup2" finished-at="2020-11-25T13:51:05Z" duration-ms="1454" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:42Z" name="setup2" finished-at="2020-11-26T10:13:42Z" duration-ms="496" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:51:05Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T13:51:17Z" duration-ms="12044" status="PASS">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:42Z" name="test_5" data-provider="testdata3" finished-at="2020-11-26T10:13:54Z" duration-ms="12172" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -217,11 +217,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:51:17Z" name="setup2" finished-at="2020-11-25T13:51:17Z" duration-ms="401" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:54Z" name="setup2" finished-at="2020-11-26T10:13:55Z" duration-ms="554" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:51:17Z" name="test_5" data-provider="testdata3" finished-at="2020-11-25T13:51:30Z" duration-ms="12203" status="PASS">
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:13:55Z" name="test_5" data-provider="testdata3" finished-at="2020-11-26T10:14:07Z" duration-ms="12251" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -232,11 +232,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-25T13:51:30Z" name="teardown" finished-at="2020-11-25T13:51:32Z" duration-ms="2910" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-11-26T10:14:07Z" name="teardown" finished-at="2020-11-26T10:14:09Z" duration-ms="1547" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- Test_Practice2 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

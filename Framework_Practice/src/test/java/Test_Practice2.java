@@ -24,7 +24,7 @@ public class Test_Practice2 {
 	boolean flag=false;
 	ChromeDriver driver ;
 	public static final String USERNAME = "manikgupta5";
-	public static final String AUTOMATE_KEY = "Bwqkktpz6zVucA9btguN";
+	public static final String AUTOMATE_KEY ="Bwqkktpz6zVucA9btguN";
 	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	ChromeOptions  caps= new ChromeOptions();
 	//ChromeDriver driver = new ChromeDriver(chromeOptions);
@@ -37,7 +37,7 @@ public class Test_Practice2 {
 	caps.setCapability("browser_version", "80");
 	caps.setCapability("name", "manikgupta5's First Test");
 	caps.setCapability(
-	        TestProjectCapabilityType.CLOUD_URL,URL);
+			TestProjectCapabilityType.CLOUD_URL,URL);
 	driver = new ChromeDriver("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
 	driver.get("https://github.com/Manik3313/Test_Site_Final/blob/main/Framework_Practice/pom.xml");
 	}
@@ -45,6 +45,7 @@ public class Test_Practice2 {
 	public void setup2()
 	{
 		driver.get("https://the-internet.herokuapp.com/");
+		System.out.println("In before method");
 	}
 	@Test
 	@DataProvider(name = "testdata" )
@@ -79,6 +80,7 @@ public class Test_Practice2 {
 	@Test(/*testName = "search_in_datatable" ,*/ dataProvider ="testdata2")
 	public void test_1(Map<String, String> data)
 	{
+		System.out.println("In test1");
 		driver.findElement(By.xpath("//a[contains(text(),'Sortable Data Tables')]")).click();
 		String lastname=driver.findElement(By.xpath("//table[@id='table1']/tbody/tr/td[contains(text(),"+"'"+data.get("lastname")+"'"+")]/../td[2]")).getText();
 				//"//table[@id='table1']/tbody/tr/td[contains(text(),'Smith')]/../td[4]")).getText();
@@ -100,6 +102,8 @@ public class Test_Practice2 {
 	@Test(/*testName = "login_page",*/ dataProvider = "testdata")
 	public void test_2(Map<String, String> data)
 	{
+
+		System.out.println("In test2");
 		System.out.println(data.get("username"));
 		System.out.println("password");
 		driver.findElement(By.xpath("//a[contains(text(),'Form Authentication')]")).click();
@@ -123,6 +127,8 @@ public class Test_Practice2 {
 	@Test(/*testName = "Multi_Window_Test"*/)
 	public void test_3()
 	{
+
+		System.out.println("In test3");
 		driver.findElement(By.xpath("//a[contains(text(),'Multiple Windows')]")).click();
 		driver.findElement(By.xpath("//a[contains(text(),'Click Here')]")).click();
 		if (driver.getWindowHandles().size()>1) 
@@ -141,6 +147,8 @@ public class Test_Practice2 {
 	@Test(/*testName="Dynamic_Control"*/)
 	public void test_4()
 	{
+
+		System.out.println("In test4");
 		driver.findElement(By.xpath("//a[contains(text(),'Dynamic Controls')]")).click();
 		//driver.findElement(By.xpath("//button[contains(text(),'Enable')]")).click();
 		/*
@@ -165,6 +173,8 @@ public class Test_Practice2 {
 	@Test(/*testName = "Forgot_Password",*/dataProvider = "testdata3")
 	public void test_5(Map<String, String> data)
 	{
+
+		System.out.println("In test5");
 		driver.findElement(By.xpath("//a[contains(text(),'Forgot Password')]")).click();
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys(data.get("email"));
 		driver.findElement(By.xpath("//*[@id='form_submit']/i")).click();
