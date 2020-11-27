@@ -49,7 +49,7 @@ public class Test_Practice2 {
 	caps.setCapability("os_version", "10");
 	caps.setCapability("browser", "Chrome");
 	caps.setCapability("browser_version", "80");
-	caps.setCapability("name", "manikgupta5's First Test");
+	caps.setCapability("name", "manikgupta4's First Test");
 	caps.setCapability(
 			TestProjectCapabilityType.CLOUD_URL,URL);
 	driver = new ChromeDriver(token,caps);//"SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
