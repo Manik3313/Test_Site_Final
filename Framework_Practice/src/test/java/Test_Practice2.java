@@ -1,7 +1,11 @@
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.Map;
+import java.util.Properties;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -20,17 +24,27 @@ import io.testproject.sdk.internal.exceptions.ObsoleteVersionException;
 
 public class Test_Practice2 {
 
-
+	InputStream inputStream;
+	Properties prop = new Properties();
+	String workSpace=System.getProperty("user.dir");
 	boolean flag=false;
 	ChromeDriver driver ;
-	public static final String USERNAME = "manikgupta5";
-	public static final String AUTOMATE_KEY ="Bwqkktpz6zVucA9btguN";
-	public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+	public static String token=null;
+	public static  String USERNAME=null ;//= "manikgupta5";
+	public static  String AUTOMATE_KEY=null;// ="Bwqkktpz6zVucA9btguN";
+	public static  String URL=null;// = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	ChromeOptions  caps= new ChromeOptions();
 	//ChromeDriver driver = new ChromeDriver(chromeOptions);
 	@BeforeTest
 	public void setup() throws InvalidTokenException, AgentConnectException, IOException, ObsoleteVersionException
 	{
+		System.getProperty("user.dir");
+		InputStream input = new FileInputStream(workSpace+"\\src\\main\\java\\resource\\config.properties");//"C:\\Users\\manik.gupta\\git\\Test_Site_Final\\Framework_Practice\\src\\main\\java\\resource\\config.properties"); 
+		prop.load(input);
+		USERNAME=(String) prop.get("user");
+		AUTOMATE_KEY=prop.getProperty("key");
+		URL="https://" + USERNAME + ":" + AUTOMATE_KEY + prop.getProperty("url");
+		token=prop.getProperty("token");
 	caps.setCapability("os", "Windows");
 	caps.setCapability("os_version", "10");
 	caps.setCapability("browser", "Chrome");
@@ -38,7 +52,7 @@ public class Test_Practice2 {
 	caps.setCapability("name", "manikgupta5's First Test");
 	caps.setCapability(
 			TestProjectCapabilityType.CLOUD_URL,URL);
-	driver = new ChromeDriver("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
+	driver = new ChromeDriver(token,caps);//"SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
 	driver.get("https://github.com/Manik3313/Test_Site_Final/blob/main/Framework_Practice/pom.xml");
 	}
 	@BeforeMethod
