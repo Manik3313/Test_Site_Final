@@ -22,7 +22,7 @@ import io.testproject.sdk.internal.exceptions.AgentConnectException;
 import io.testproject.sdk.internal.exceptions.InvalidTokenException;
 import io.testproject.sdk.internal.exceptions.ObsoleteVersionException;
 
-public class Test_Practice2 {
+public class Test_Practice {
 
 	InputStream inputStream;
 	Properties prop = new Properties();
@@ -52,7 +52,7 @@ public class Test_Practice2 {
 	caps.setCapability("name", "manikgupta4's First Test");
 	caps.setCapability(
 			TestProjectCapabilityType.CLOUD_URL,URL);
-	driver = new ChromeDriver("SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);//"SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
+	driver = new ChromeDriver(token,caps);//"SmBwObq_TzSPkKuuWV8hQobhRwkX7f8tHKXXPZj4bYY1",caps);
 	driver.get("https://github.com/Manik3313/Test_Site_Final/blob/main/Framework_Practice/pom.xml");
 	}
 	@BeforeMethod
@@ -64,7 +64,7 @@ public class Test_Practice2 {
 	@Test
 	@DataProvider(name = "testdata" )
 	public Object[][] test_data() throws IOException {
-		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\user_data.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx"*/,
+		excel_utls excel = new excel_utls("C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx",
 				"Sheet1");
 		Object[][] data = excel_utls.testData(excel);
 
@@ -74,7 +74,7 @@ public class Test_Practice2 {
 	@Test
 	@DataProvider(name = "testdata2" )
 	public Object[][] test_data2() throws IOException {
-		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\user_data.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx"*/,
+		excel_utls excel = new excel_utls("C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx",
 				"Sheet2");
 		Object[][] data = excel_utls.testData(excel);
 		return data;
@@ -84,7 +84,7 @@ public class Test_Practice2 {
 	@Test
 	@DataProvider(name = "testdata3" )
 	public Object[][] test_data3() throws IOException {
-		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\user_data.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data1.xlsx"*/,
+		excel_utls excel = new excel_utls("C:\\Users\\manik.gupta\\Documents\\test\\user_data1.xlsx",
 				"Sheet3");
 		Object[][] data = excel_utls.testData(excel);
 
@@ -95,7 +95,6 @@ public class Test_Practice2 {
 	public void test_1(Map<String, String> data)
 	{
 		System.out.println("In test1");
-		System.out.println(data.get("firstname"));
 		driver.findElement(By.xpath("//a[contains(text(),'Sortable Data Tables')]")).click();
 		String lastname=driver.findElement(By.xpath("//table[@id='table1']/tbody/tr/td[contains(text(),"+"'"+data.get("lastname")+"'"+")]/../td[2]")).getText();
 				//"//table[@id='table1']/tbody/tr/td[contains(text(),'Smith')]/../td[4]")).getText();
@@ -190,7 +189,6 @@ public class Test_Practice2 {
 	{
 
 		System.out.println("In test5");
-		System.out.println(data.get("email"));
 		driver.findElement(By.xpath("//a[contains(text(),'Forgot Password')]")).click();
 		driver.findElement(By.xpath("//*[@id='email']")).sendKeys(data.get("email"));
 		driver.findElement(By.xpath("//*[@id='form_submit']/i")).click();
@@ -218,6 +216,7 @@ public class Test_Practice2 {
 		driver.quit();
 	}
 }
+
 
 
 
