@@ -1,165 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="0" skipped="3">
+<testng-results ignored="0" total="12" passed="10" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-02T05:15:20Z" name="Default suite" finished-at="2020-12-02T05:16:05Z" duration-ms="45709">
+  <suite started-at="2020-12-02T05:16:47Z" name="Default suite" finished-at="2020-12-02T05:18:37Z" duration-ms="110192">
     <groups>
     </groups>
-    <test started-at="2020-12-02T05:15:20Z" name="Default test" finished-at="2020-12-02T05:16:05Z" duration-ms="45709">
+    <test started-at="2020-12-02T05:16:47Z" name="Default test" finished-at="2020-12-02T05:18:37Z" duration-ms="110192">
       <class name="Test_Practice2">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:20Z" name="setup" finished-at="2020-12-02T05:15:47Z" duration-ms="27230" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:16:47Z" name="setup" finished-at="2020-12-02T05:17:06Z" duration-ms="19815" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:47Z" name="test_1" data-provider="testdata2" finished-at="2020-12-02T05:15:47Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx'
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx'
-at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:162)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:149)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:123)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:239)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:172)
-at org.apache.poi.ooxml.POIXMLDocument.openPackage(POIXMLDocument.java:89)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:342)
-at excel_utls.<init>(excel_utls.java:17)
-at Test_Practice2.test_data2(Test_Practice2.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
-Caused by: java.io.FileNotFoundException: C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx (The system cannot find the file specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:159)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:07Z" name="setup2" finished-at="2020-12-02T05:17:10Z" duration-ms="3241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:10Z" name="test_1" data-provider="testdata2" finished-at="2020-12-02T05:17:14Z" duration-ms="4068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=John, lastname=Smith}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_1 -->
-        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:47Z" name="test_2" data-provider="testdata" finished-at="2020-12-02T05:15:47Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx']]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx'
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx'
-at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:162)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:149)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:123)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:239)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:172)
-at org.apache.poi.ooxml.POIXMLDocument.openPackage(POIXMLDocument.java:89)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:342)
-at excel_utls.<init>(excel_utls.java:17)
-at Test_Practice2.test_data(Test_Practice2.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
-Caused by: java.io.FileNotFoundException: C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx (The system cannot find the file specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:159)
-... 37 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:14Z" name="setup2" finished-at="2020-12-02T05:17:15Z" duration-ms="480" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:15Z" name="test_1" data-provider="testdata2" finished-at="2020-12-02T05:17:16Z" duration-ms="838" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=Jason, lastname=Doe}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_1 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:16Z" name="setup2" finished-at="2020-12-02T05:17:16Z" duration-ms="439" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_1(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:16Z" name="test_1" data-provider="testdata2" finished-at="2020-12-02T05:17:17Z" duration-ms="910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{firstname=Tim, lastname=Conway}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_1 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:17Z" name="setup2" finished-at="2020-12-02T05:17:18Z" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:18Z" name="test_2" data-provider="testdata" finished-at="2020-12-02T05:17:20Z" duration-ms="2801" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=SuperSecretPassword!, username=tomsmith}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_2 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:47Z" name="setup2" finished-at="2020-12-02T05:15:51Z" duration-ms="3815" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:20Z" name="setup2" finished-at="2020-12-02T05:17:21Z" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup2 -->
-        <test-method signature="test_3()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:51Z" name="test_3" finished-at="2020-12-02T05:15:52Z" duration-ms="1190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_3 -->
-        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:52Z" name="setup2" finished-at="2020-12-02T05:15:53Z" duration-ms="550" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup2 -->
-        <test-method signature="test_4()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:15:53Z" name="test_4" finished-at="2020-12-02T05:16:04Z" duration-ms="11286" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test_4 -->
-        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:16:04Z" name="test_5" data-provider="testdata3" finished-at="2020-12-02T05:16:04Z" duration-ms="0" status="SKIP">
-          <exception class="java.lang.RuntimeException">
-            <message>
-              <![CDATA[org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx']]>
-            </message>
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:21Z" name="test_2" data-provider="testdata" finished-at="2020-12-02T05:17:24Z" duration-ms="3035" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=SuperSecretPasswor, username=tomsmith}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
             <full-stacktrace>
-              <![CDATA[java.lang.RuntimeException: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx'
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:49)
-at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:131)
-at org.testng.internal.Parameters.handleParameters(Parameters.java:706)
-at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:49)
-at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:37)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:924)
+              <![CDATA[java.lang.AssertionError: 
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+at Test_Practice2.test_2(Test_Practice2.java:139)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
 at org.testng.TestRunner.privateRun(TestRunner.java:648)
@@ -177,37 +115,139 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.apache.poi.openxml4j.exceptions.InvalidOperationException: Can't open the specified file input stream from file: 'C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx'
-at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:162)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:149)
-at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:123)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:239)
-at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:172)
-at org.apache.poi.ooxml.POIXMLDocument.openPackage(POIXMLDocument.java:89)
-at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:342)
-at excel_utls.<init>(excel_utls.java:17)
-at Test_Practice2.test_data3(Test_Practice2.java:87)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:24Z" name="setup2" finished-at="2020-12-02T05:17:25Z" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_2(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:25Z" name="test_2" data-provider="testdata" finished-at="2020-12-02T05:17:28Z" duration-ms="3019" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=SuperSecretPassword, username=tomsmith}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+at org.testng.AssertJUnit.fail(AssertJUnit.java:59)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:24)
+at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:33)
+at Test_Practice2.test_2(Test_Practice2.java:139)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:74)
-at org.testng.internal.MethodInvocationHelper.invokeMethodNoCheckedException(MethodInvocationHelper.java:45)
-... 22 more
-Caused by: java.io.FileNotFoundException: C:\Users\manik.gupta\git\Test_Site_Final\Framework_Practice\src\test\java\Testdata.xlsx.xlsx (The system cannot find the file specified)
-at java.base/java.io.FileInputStream.open0(Native Method)
-at java.base/java.io.FileInputStream.open(FileInputStream.java:219)
-at java.base/java.io.FileInputStream.<init>(FileInputStream.java:157)
-at org.apache.poi.openxml4j.opc.ZipPackage.openZipEntrySourceStream(ZipPackage.java:159)
-... 37 more
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.RuntimeException -->
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_2 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:28Z" name="setup2" finished-at="2020-12-02T05:17:28Z" duration-ms="477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_3()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:28Z" name="test_3" finished-at="2020-12-02T05:17:29Z" duration-ms="1388" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_3 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:29Z" name="setup2" finished-at="2020-12-02T05:17:30Z" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_4()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:30Z" name="test_4" finished-at="2020-12-02T05:17:41Z" duration-ms="11098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_4 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:41Z" name="setup2" finished-at="2020-12-02T05:17:42Z" duration-ms="428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:42Z" name="test_5" data-provider="testdata3" finished-at="2020-12-02T05:17:55Z" duration-ms="13652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=manikgupta33@gmail.com}]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_5 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:16:04Z" name="teardown" finished-at="2020-12-02T05:16:05Z" duration-ms="1532" status="PASS">
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:55Z" name="setup2" finished-at="2020-12-02T05:17:56Z" duration-ms="719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:17:56Z" name="test_5" data-provider="testdata3" finished-at="2020-12-02T05:18:09Z" duration-ms="12594" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=manikgupta33@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_5 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:18:09Z" name="setup2" finished-at="2020-12-02T05:18:09Z" duration-ms="451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:18:09Z" name="test_5" data-provider="testdata3" finished-at="2020-12-02T05:18:21Z" duration-ms="12362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=manikgupta33@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_5 -->
+        <test-method is-config="true" signature="setup2()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:18:21Z" name="setup2" finished-at="2020-12-02T05:18:22Z" duration-ms="427" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup2 -->
+        <test-method signature="test_5(java.util.Map)[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:18:22Z" name="test_5" data-provider="testdata3" finished-at="2020-12-02T05:18:34Z" duration-ms="12482" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{email=manikgupta33@gmail.com}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_5 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:Test_Practice2@68d279ec]" started-at="2020-12-02T05:18:34Z" name="teardown" finished-at="2020-12-02T05:18:37Z" duration-ms="2484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
