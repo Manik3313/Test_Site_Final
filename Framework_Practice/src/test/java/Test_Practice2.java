@@ -216,6 +216,7 @@ public class Test_Practice2 {
 	public void teardown() {
 		driver.close();
 		driver.quit();
+		// cchecking git is working or n
 	}
 }
 
