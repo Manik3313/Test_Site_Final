@@ -64,7 +64,7 @@ public class Test_Practice2 {
 	@Test
 	@DataProvider(name = "testdata" )
 	public Object[][] test_data() throws IOException {
-		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\user_data.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx"*/,
+		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\Testdata.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx"*/,
 				"Sheet1");
 		Object[][] data = excel_utls.testData(excel);
 
@@ -74,7 +74,7 @@ public class Test_Practice2 {
 	@Test
 	@DataProvider(name = "testdata2" )
 	public Object[][] test_data2() throws IOException {
-		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\user_data.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx"*/,
+		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\Testdata.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data.xlsx"*/,
 				"Sheet2");
 		Object[][] data = excel_utls.testData(excel);
 		return data;
@@ -84,7 +84,7 @@ public class Test_Practice2 {
 	@Test
 	@DataProvider(name = "testdata3" )
 	public Object[][] test_data3() throws IOException {
-		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\user_data.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data1.xlsx"*/,
+		excel_utls excel = new excel_utls(workSpace+"\\src\\test\\java\\Testdata.xlsx"/*"C:\\Users\\manik.gupta\\Documents\\test\\user_data1.xlsx"*/,
 				"Sheet3");
 		Object[][] data = excel_utls.testData(excel);
 
