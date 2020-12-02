@@ -213,10 +213,14 @@ public class Test_Practice2 {
 			
 	}
 	@AfterTest
-	public void teardown() {
+	public void teardown() 
+	{
+		System.out.println("Exit");
 		driver.close();
 		driver.quit();
 		// cchecking git is working or n
+		//working
+		
 	}
 }
 
