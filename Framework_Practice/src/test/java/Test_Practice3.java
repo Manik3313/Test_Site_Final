@@ -22,7 +22,8 @@ import io.testproject.sdk.internal.exceptions.AgentConnectException;
 import io.testproject.sdk.internal.exceptions.InvalidTokenException;
 import io.testproject.sdk.internal.exceptions.ObsoleteVersionException;
 
-public class Test_Practice {
+public class Test_Practice3
+{
 
 	InputStream inputStream;
 	Properties prop = new Properties();
